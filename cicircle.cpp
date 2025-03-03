@@ -16,6 +16,10 @@ void circle(int r, int corner)// r - радиус, corner - угол секто�
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    int r = 5, corner = 45;
+    int r = 10, corner = 45;
+    if(r >= 0 && corner >=0){
     circle(r, corner);
+    }else{
+    cout<< "длина и угол не могут быть отрицательными.";
+    }
 }
