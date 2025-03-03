@@ -16,8 +16,17 @@ void triangle(int a, int b, int c, bool fl)
 int main()
 {
   setlocale(LC_ALL, "Russian");
-  int A = 5, B = 2, C = 5;
+  int A,B,C;
   bool fl = false;
+  cout << "Введите сторону А:";
+  cin >> A;
+  cout << endl;
+  cout << "Введите сторону B:";
+  cin >> B;
+  cout << endl;
+  cout << "Введите сторону C:";
+  cin >> C;
+  cout << "Введите сторону А:";
   if ((A + B > C) and (B + C > A) and (A + C > B)) triangle(A, B, C, fl);//проверка на существование треугольника по трём сторонам
   else cout << "Треугольника с данными сторонами не существует" << endl;
   return 0;
