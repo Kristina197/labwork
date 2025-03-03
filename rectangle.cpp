@@ -17,7 +17,14 @@ int main(){
   cin >> a;
   cout << "\nВведите вторую сторону прямоугольника: ";
   cin >> b;
-  cout << "Периметр прямоугольника равен: " << perimeter(a,b) << endl;
-  cout << "Площадь прямоугольника равна: " << square(a,b) << endl;
-  cout << "Длина диагонали равна: " << diagonal(a,b) << endl << endl;
+  if (a<=0||b<=0){
+    cout << "Стороны не должны быть отрицательными" <<endl;
+    return 1;
+    }
+  else{
+    cout << "Периметр прямоугольника равен: " << perimeter(a,b) << endl;
+    cout << "Площадь прямоугольника равна: " << square(a,b) << endl;
+    cout << "Длина диагонали равна: " << diagonal(a,b) << endl << endl;
+    return 0;
+    }
 }
