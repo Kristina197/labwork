@@ -24,9 +24,15 @@ int main() {
     cin >> d;
     cout << "Введите высоту трапеции: ";
     cin >> h;
-    cout << "\n";
-    cout << "Периметр трапеции равен: " << perimetr(a, b, c, d) << endl;
-    cout << "Площадь трапеции равна: " << square(a, b, h) << endl;
-    cout << "Длина средней линии трапеции равна: " << midLine(a, b) << endl;
+    if (a > 0 && b > 0 && c > 0 && d > 0 && h > 0){
+        cout << "\n";
+        cout << "Периметр трапеции равен: " << perimetr(a, b, c, d) << endl;
+        cout << "Площадь трапеции равна: " << square(a, b, h) << endl;
+        cout << "Длина средней линии трапеции равна: " << midLine(a, b) << endl;
+    }
+    else{
+        cout << "\n";
+        cout << "Ошибка: был введен отрицательный параметр" << endl;
+    }
     return 0;
 }
